@@ -1,0 +1,26 @@
+python main.py --csv -c 1 -n ps碟 -P 753 -d 2019-01-22 -r 飙酷车神+fifa19+漫威蜘蛛侠
+python main.py --csv -c 1 -n ps碟 -P 100 -d 2019-01-22 -r cod
+python main.py --csv -c 1 -n ps手柄 -P 299 -d 2019-01-29
+python main.py --csv -c 1 -n ps碟 -P 459 -d 2019-03-14 -r 火影+底特律+fifa17
+python main.py --csv -c 2 -n 敌法师饰品 -P 52 -d 2019-04-07
+python main.py --csv -n 达音科17th -P 3599 -d 2019-08-12 --close_loop
+python main.py --csv -n dsd音源 -P 29.87 -d 2019-10-04
+python main.py --csv -n 封闭乌 -P 4899 -d 2019-10-29 --close_loop
+python main.py --csv -c 1 -n ps碟 -P 368 -d 2019-11-23 -r 分手厨房2+植物大战僵尸3
+python main.py --csv -c 1 -n hdmi分线器 -P 69 -d 2019-12-07
+python main.py --csv -c 1 -n ps碟 -P 345 -d 2019-11-23 -r 真三国无双+荒野大镖客
+python main.py --csv -p 1 -n aux连接线 -P 69 -d 2019-02-11
+python main.py --csv -p 3 -c 2 -n 充值 -P 24 -d 2019-03-29
+python main.py --csv -c 2 -n 敌法饰品 -P 52 -d 2019-04-07
+python main.py --csv -p 3 -c 2 -n 充值 -P 60 -d 2019-05-01
+python main.py --csv -p 3 -c 2 -n 充值 -P 600 -d 2019-05-08
+python main.py --csv -p 3 -c 2 -n 充值 -P 20 -d 2019-05-12
+python main.py --csv -p 3 -c 2 -n 充值 -P 60 -d 2019-06-01
+python main.py --csv -p 3 -c 2 -n 充值 -P 180 -d 2019-06-27
+python main.py --csv -p 3 -c 2 -n 充值 -P 180 -d 2019-06-29
+python main.py --csv -p 3 -c 2 -n 充值 -P 12 -d 2019-08-03
+python main.py --csv -p 3 -c 2 -n 充值 -P 24 -d 2019-09-07
+python main.py --csv --sort
+python main.py --csv --sell -p 2 -c 1 -n ps碟 -P 565 -d 2019-03-12 -r cod+漫威蜘蛛侠+fifa19
+python main.py --csv --sell -p 2 -c 1 -n ps碟 -P 310 -d 2019-10-23 -r 火影+飙酷车神
+python main.py --csv --sort

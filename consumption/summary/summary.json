@@ -1,0 +1,152 @@
+{
+    "0": {
+        "balance": -12188.87,
+        "class": {
+            "PS": -4453.52,
+            "dota2": -3093.88,
+            "music": -46378.75,
+            "others": 1090.0
+        },
+        "till": 2021
+    },
+    "2018": {
+        "class": {
+            "PS": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            },
+            "dota2": {
+                "cost": -668.48,
+                "earn": 0.0,
+                "profit": -668.48
+            },
+            "music": {
+                "cost": -8594.5,
+                "earn": 0.0,
+                "profit": -8594.5
+            },
+            "others": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            }
+        },
+        "ended": true,
+        "income": 6000,
+        "outlay": -9262.98,
+        "surplus": 0
+    },
+    "2019": {
+        "class": {
+            "PS": {
+                "cost": -2393.0,
+                "earn": 875.0,
+                "profit": -1518.0
+            },
+            "dota2": {
+                "cost": -1264.0,
+                "earn": 0.0,
+                "profit": -1264.0
+            },
+            "music": {
+                "cost": -8596.87,
+                "earn": 0.0,
+                "profit": -8596.87
+            },
+            "others": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            }
+        },
+        "ended": true,
+        "income": 12000,
+        "outlay": -11378.87,
+        "surplus": -3589.28
+    },
+    "2020": {
+        "class": {
+            "PS": {
+                "cost": -610.2,
+                "earn": 628.0,
+                "profit": 17.8
+            },
+            "dota2": {
+                "cost": -1161.4,
+                "earn": 0.0,
+                "profit": -1161.4
+            },
+            "music": {
+                "cost": -42100.59,
+                "earn": 27213.0,
+                "profit": -14887.59
+            },
+            "others": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            }
+        },
+        "ended": true,
+        "income": 12000,
+        "outlay": -16031.19,
+        "surplus": -3264.96
+    },
+    "2021": {
+        "class": {
+            "PS": {
+                "cost": -5899.32,
+                "earn": 2946.0,
+                "profit": -2953.32
+            },
+            "dota2": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            },
+            "music": {
+                "cost": -54439.79,
+                "earn": 40140.0,
+                "profit": -14299.79
+            },
+            "others": {
+                "cost": 0.0,
+                "earn": 1090.0,
+                "profit": 1090.0
+            }
+        },
+        "ended": true,
+        "income": 12000,
+        "outlay": -16163.11,
+        "surplus": -8025.76
+    },
+    "2022": {
+        "class": {
+            "PS": {
+                "cost": 0,
+                "earn": 0,
+                "profit": 0
+            },
+            "dota2": {
+                "cost": 0,
+                "earn": 0,
+                "profit": 0
+            },
+            "music": {
+                "cost": 0,
+                "earn": 0,
+                "profit": 0
+            },
+            "others": {
+                "cost": 0,
+                "earn": 0,
+                "profit": 0
+            }
+        },
+        "ended": false,
+        "income": 12000,
+        "outlay": 0,
+        "surplus": -13407.76
+    }
+}
