@@ -1,4 +1,5 @@
 2018
+python main.py --json -y 2018
 python main.py --csv -n 欧亚德mmcx插头 -P 188 -d 2018-08-04
 python main.py --csv -n 3.5转2.5转接头 -P 50 -d 2018-08-05 --close_loop
 python main.py --csv -n hd660s -P 2530 -d 2018-08-17 --close_loop
@@ -18,6 +19,7 @@ python main.py --csv --sort
 
 
 2019
+python main.py --json -y 2019
 python main.py --csv -c 1 -n ps碟 -P 753 -d 2019-01-22 -r 飙酷车神+fifa19+漫威蜘蛛侠
 python main.py --csv -c 1 -n ps碟 -P 100 -d 2019-01-22 -r cod
 python main.py --csv -c 1 -n ps手柄 -P 299 -d 2019-01-29
@@ -47,6 +49,7 @@ python main.py --csv --sort
 
 
 2020
+python main.py --json -y 2020
 python main.py --csv -p 3 -c 1 -n ps游戏 -P 188.20 -d 2020-08-09 -r 毛线小精灵+九张羊皮纸
 python main.py --csv -n 3.5转rca -P 23.15 -d 2020-03-20
 python main.py --csv -n 铜彩rca -P 198 -d 2020-03-31 --close_loop
@@ -100,6 +103,7 @@ python main.py --csv --sort
 
 
 2021
+python main.py --json -y 2021
 python main.py --csv -p 2 -c 1 --sell -n ps4 -P 1100 -d 2021-06-15
 python main.py --csv -p 2 -c 3 --sell -n 魅族gravity -P 500 -d 2021-08-16
 python main.py --csv -p 2 --sell -n 铜彩rca -P 100 -d 2021-08-18 --close_loop
@@ -157,6 +161,7 @@ python main.py --csv --sort
 
 
 2022
+python main.py --json -y 2022
 python main.py --csv -p 3 -c 1 -n ps游戏 -P 65.01 -d 2022-03-08 -r gta5
 python main.py --csv -n 拓品m50 -P 1179 -d 2022-06-14 --close_loop
 python main.py --csv -n usb线 -P 73.74 -d 2022-06-21 --close_loop
@@ -182,16 +187,29 @@ python main.py --csv -n qa661电源线 -P 16.5 -d 2022-05-24
 python main.py --csv -n 音箱海绵脚垫 -P 46.77 -d 2022-05-26
 python main.py --csv -p 3 -c 1 -n ps碟 -P 400 -d 2022-05-28 -r 地平线2
 python main.py --csv -p 3 -c 2 -n 充值 -P 208 -d 2022-10-13
-python main.py --csv --sort
 python main.py --csv -p 2 --sell -n 拓品m50 -P 912 -d 2022-08-09 --close_loop
 python main.py --csv -p 2 --sell -n 享声国标电源线 -P 249 -d 2022-08-11 --close_loop
 python main.py --csv -p 2 --sell -n qa661 -P 1850 -d 2022-08-30 --close_loop
 python main.py --csv -p 2 --sell -n mdr_z1r -P 7200 -d 2022-10-16 --close_loop
 python main.py --csv -p 2 --sell -n 天朗gold5 -P 2399 -d 2022-10-17 --close_loop
 python main.py --csv -p 2 --sell -n 万隆同轴线 -P 400 -d 2022-08-14 --close_loop
+python main.py --csv -p 2 --sell -n 大耳保护盒 -P 115 -d 2022-11-08 --close_loop
+python main.py --csv -p 2 --sell -n 800s插针转接头 -P 150 -d 2022-11-19 --close_loop
+python main.py --csv -p 3 -c 2 -n 充值 -P 208
+python main.py --csv -p 3 -c 1 --sell -n ps碟 -P 825 -d 2022-12-12 -r 地平线2+FF7re
+python main.py --csv -p 2 -c 3 --sell -n 电脑配件 -P 500 -d 2022-11-22 -r R5_3600
+python main.py --csv -p 1 -c 3 -n 电脑配件 -P 1009 -d 2022-12-11 -r 振华1000w电源
+python main.py --csv -p 1 -c 3 -n 电脑配件 -P 5989 -d 2022-12-11 -r 铭瑄RTX3080Ti
+python main.py --csv -p 2 --sell -n hd800s -P 5700 -d 2022-12-20 --close_loop
 python main.py --csv --sort
 
-
+python main.py --json -y 2023
+python main.py --csv -p 2 --sell -n 锋之星升级线 -P 750 -d 2023-01-07 --close_loop
+python main.py --csv -p 2 --sell -n 拓品dx3pro+ -P 799 -d 2023-01-08 --close_loop -r (749+50)购买时返现50漏统计
+python main.py --csv -p 2 -c 3 --sell -n 电脑配件 -P 600 -d 2023-01-10 -r 铭瑄电竞之心1660s，返现30
+python main.py --csv -p 2 -c 3 --sell -n 电脑配件 -P 410 -d 2023-01-08 -r b450m迫击炮
+python main.py --csv -p 1 -c 3 -n 电脑配件 -P 999 -d 2023-01-04 -r b550m迫击炮max-wifi
+python main.py --csv --sort
 
 
 

@@ -1,0 +1,41 @@
+python main.py --json -y 2022
+python main.py --csv -p 3 -c 1 -n ps游戏 -P 65.01 -d 2022-03-08 -r gta5
+python main.py --csv -n 拓品m50 -P 1179 -d 2022-06-14 --close_loop
+python main.py --csv -n usb线 -P 73.74 -d 2022-06-21 --close_loop
+python main.py --csv -n 大乌插针 -P 106 -d 2022-10-02
+python main.py --csv -n 焊锡+热缩管 -P 55.8 -d 2022-10-02
+python main.py --csv -n 焊接固定器 -P 78.97 -d 2022-10-03
+python main.py --csv -p 2 -n mdr_z1r -P 7800 -d 2022-02-28 --close_loop
+python main.py --csv -p 2 -n 大耳保护盒 -P 100 -d 2022-02-28 --close_loop -r z1r赠送
+python main.py --csv -p 2 -n 锋之星升级线 -P 1000 -d 2022-02-28 --close_loop
+python main.py --csv -p 2 -n 天朗gold5 -P 2500 -d 2022-05-22 --close_loop
+python main.py --csv -p 2 -n 拓品dx3pro+ -P 798 -d 2022-05-27 --close_loop
+python main.py --csv -p 2 -n dela_n1a -P 7800 -d 2022-08-03 --close_loop
+python main.py --csv -p 2 -n 大乌 -P 9600 -d 2022-09-29 --close_loop
+python main.py --csv -p 1 -n rca音箱线 -P 47.98 -d 2022-05-27
+python main.py --csv -p 1 -n 3.5转6.35转接头 -P 34 -d 2022-09-29
+python main.py --csv -p 1 -n 电烙铁 -P 118.9 -d 2022-10-03
+python main.py --csv -n 热缩管 -P 10.04 -d 2022-03-05
+python main.py --csv -n 800s插针转接头 -P 228.38 -d 2022-03-05 --close_loop
+python main.py --csv -n 耳机支架 -P 29 -d 2022-03-07
+python main.py --csv -n 热缩管 -P 5.12 -d 2022-03-12
+python main.py --csv -n 耳罩保护套 -P 64.64 -d 2022-04-21
+python main.py --csv -n qa661电源线 -P 16.5 -d 2022-05-24
+python main.py --csv -n 音箱海绵脚垫 -P 46.77 -d 2022-05-26
+python main.py --csv -p 3 -c 1 -n ps碟 -P 400 -d 2022-05-28 -r 地平线2
+python main.py --csv -p 3 -c 2 -n 充值 -P 208 -d 2022-10-13
+python main.py --csv -p 2 --sell -n 拓品m50 -P 912 -d 2022-08-09 --close_loop
+python main.py --csv -p 2 --sell -n 享声国标电源线 -P 249 -d 2022-08-11 --close_loop
+python main.py --csv -p 2 --sell -n qa661 -P 1850 -d 2022-08-30 --close_loop
+python main.py --csv -p 2 --sell -n mdr_z1r -P 7200 -d 2022-10-16 --close_loop
+python main.py --csv -p 2 --sell -n 天朗gold5 -P 2399 -d 2022-10-17 --close_loop
+python main.py --csv -p 2 --sell -n 万隆同轴线 -P 400 -d 2022-08-14 --close_loop
+python main.py --csv -p 2 --sell -n 大耳保护盒 -P 115 -d 2022-11-08 --close_loop
+python main.py --csv -p 2 --sell -n 800s插针转接头 -P 150 -d 2022-11-19 --close_loop
+python main.py --csv -p 3 -c 2 -n 充值 -P 208
+python main.py --csv -p 3 -c 1 --sell -n ps碟 -P 825 -d 2022-12-12 -r 地平线2+FF7re
+python main.py --csv -p 2 -c 3 --sell -n 电脑配件 -P 500 -d 2022-11-22 -r R5_3600
+python main.py --csv -p 1 -c 3 -n 电脑配件 -P 1009 -d 2022-12-11 -r 振华1000w电源
+python main.py --csv -p 1 -c 3 -n 电脑配件 -P 5989 -d 2022-12-11 -r 铭瑄RTX3080Ti
+python main.py --csv -p 2 --sell -n hd800s -P 5700 -d 2022-12-20 --close_loop
+python main.py --csv --sort

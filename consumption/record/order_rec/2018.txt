@@ -1,3 +1,4 @@
+python main.py --json -y 2018
 python main.py --csv -n 欧亚德mmcx插头 -P 188 -d 2018-08-04
 python main.py --csv -n 3.5转2.5转接头 -P 50 -d 2018-08-05 --close_loop
 python main.py --csv -n hd660s -P 2530 -d 2018-08-17 --close_loop

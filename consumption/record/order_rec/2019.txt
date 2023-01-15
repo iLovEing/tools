@@ -1,3 +1,4 @@
+python main.py --json -y 2019
 python main.py --csv -c 1 -n ps碟 -P 753 -d 2019-01-22 -r 飙酷车神+fifa19+漫威蜘蛛侠
 python main.py --csv -c 1 -n ps碟 -P 100 -d 2019-01-22 -r cod
 python main.py --csv -c 1 -n ps手柄 -P 299 -d 2019-01-29

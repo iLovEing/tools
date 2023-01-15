@@ -1,13 +1,13 @@
 {
     "0": {
-        "balance": -12188.87,
+        "balance": -20679.61,
         "class": {
-            "PS": -4453.52,
-            "dota2": -3093.88,
-            "music": -46378.75,
-            "others": 1090.0
+            "PS": -4093.53,
+            "dota2": -3509.88,
+            "music": -59096.59,
+            "others": -5408.0
         },
-        "till": 2021
+        "till": 2022
     },
     "2018": {
         "class": {
@@ -124,6 +124,34 @@
     "2022": {
         "class": {
             "PS": {
+                "cost": -465.01,
+                "earn": 825.0,
+                "profit": 359.99
+            },
+            "dota2": {
+                "cost": -416.0,
+                "earn": 0.0,
+                "profit": -416.0
+            },
+            "music": {
+                "cost": -31692.84,
+                "earn": 18975.0,
+                "profit": -12717.84
+            },
+            "others": {
+                "cost": -6998.0,
+                "earn": 500.0,
+                "profit": -6498.0
+            }
+        },
+        "ended": true,
+        "income": 12000,
+        "outlay": -19271.85,
+        "surplus": -13407.76
+    },
+    "2023": {
+        "class": {
+            "PS": {
                 "cost": 0,
                 "earn": 0,
                 "profit": 0
@@ -147,6 +175,6 @@
         "ended": false,
         "income": 12000,
         "outlay": 0,
-        "surplus": -13407.76
+        "surplus": -22747.57
     }
 }

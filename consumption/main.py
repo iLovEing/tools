@@ -24,7 +24,10 @@ pf_dict = {
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='零花钱消费统计')
+    help_str = '零花钱消费统计 [' \
+               'class_dict = {"0": "music", "1": "PS", "2": "dota2", "3": "others"}' \
+               ', pf_dict = {"0": "TB", "1": "JD", "2": "XY", "3": "others"}]'
+    parser = argparse.ArgumentParser(description=help_str)
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--csv', action='store_true', help='操作csv, 添加消费项')
     group.add_argument('--json', action='store_true', help='操作json, 总结模块')
@@ -68,6 +71,9 @@ class CsvItem:
     def show(self):
         print(self.df)
         print('total consumption:', self.df['price'].sum())
+        print('\nneeded to be close_loop:')
+        print(self.df[self.df['closed'] == 'N'])
+        print('total consumption:', self.df[self.df['closed'] == 'N']['price'].sum())
 
     def add_item(self, args):
         item_dict = {
@@ -105,6 +111,9 @@ class CsvItem:
         self.df.to_csv(csv_file, index=False, encoding='utf-8_sig')
 
     def special_operation(self):
+        # 删除最后一行
+        # self.df = self.df.drop([len(self.df) - 1])
+        # print(len(self.df))
         pass
 
     def get_csv(self):
@@ -142,8 +151,8 @@ class JsonItem:
         surplus_this_year = self.summary_dict[str(this_year)]['surplus']
         outlay_this_year = df[df['year'] == this_year]['price'].sum()
         balance = income_this_year + surplus_this_year + outlay_this_year
-        print(f"\nIn year {this_year}, income {income_this_year}, surplus {surplus_this_year},"
-              f"outlay till now {round(outlay_this_year, 2)}, balance {round(balance, 2)}\nGood luck, and to be better.")
+        print(f"\nIn year {this_year}, income {income_this_year}, history_surplus {surplus_this_year},"
+              f" outlay till now {round(outlay_this_year, 2)}, balance {round(balance, 2)}\nGood luck, and to be better.")
 
     def add_year(self, df, year):
         self.__check_history(year)

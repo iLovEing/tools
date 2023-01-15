@@ -1,3 +1,4 @@
+python main.py --json -y 2020
 python main.py --csv -p 3 -c 1 -n ps游戏 -P 188.20 -d 2020-08-09 -r 毛线小精灵+九张羊皮纸
 python main.py --csv -n 3.5转rca -P 23.15 -d 2020-03-20
 python main.py --csv -n 铜彩rca -P 198 -d 2020-03-31 --close_loop
