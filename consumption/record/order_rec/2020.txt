@@ -1,5 +1,5 @@
 python main.py --json -y 2020
-python main.py --csv -p 3 -c 1 -n ps游戏 -P 188.20 -d 2020-08-09 -r 毛线小精灵+九张羊皮纸
+python main.py --csv --platform 4 --classification 1 -n ps游戏 -P 188.20 -d 2020-08-09 -r 毛线小精灵+九张羊皮纸
 python main.py --csv -n 3.5转rca -P 23.15 -d 2020-03-20
 python main.py --csv -n 铜彩rca -P 198 -d 2020-03-31 --close_loop
 python main.py --csv -n 铜彩usb线 -P 129 -d 2020-03-31 --close_loop
@@ -7,9 +7,9 @@ python main.py --csv -n 耳机支架 -P 38 -d 2020-04-04
 python main.py --csv -n 银乌 -P 7101 -d 2020-04-09 --close_loop
 python main.py --csv -n 劲浪耳机支架 -P 299 -d 2020-04-09 --close_loop
 python main.py --csv -n 头梁保护套 -P 18 -d 2020-04-13
-python main.py --csv -c 1 -n ps碟 -P 294 -d 2020-04-15 -r 尼尔+植物大战僵尸2
-python main.py --csv -c 2 -n 小狗饰品 -P 4.5 -d 2020-06-26
-python main.py --csv -c 2 -n 敌法饰品 -P 89 -d 2020-07-10
+python main.py --csv --classification 1 -n ps碟 -P 294 -d 2020-04-15 -r 尼尔+植物大战僵尸2
+python main.py --csv --classification 2 -n 小狗饰品 -P 4.5 -d 2020-06-26
+python main.py --csv --classification 2 -n 敌法饰品 -P 89 -d 2020-07-10
 python main.py --csv -n sony数据线 -P 12.7 -d 2020-07-12
 python main.py --csv -n 铜彩光纤线 -P 88.93 -d 2020-07-24 --close_loop
 python main.py --csv -n qa390 -P 7200 -d 2020-07-24 --close_loop
@@ -17,35 +17,40 @@ python main.py --csv -n 万隆同轴线 -P 516.41 -d 2020-08-02 --close_loop
 python main.py --csv -n 高芬xlr -P 645 -d 2020-09-03 --close_loop
 python main.py --csv -n ly06_pro改6.35 -P 328.4 -d 2020-09-27
 python main.py --csv -n 飞马座 -P 5980 -d 2020-10-06 --close_loop
-python main.py --csv -c 1 -n ps碟 -P 128 -d 2020-12-26 -r 小小大星球+撕纸小邮差
-python main.py --csv -p 2 -n smsl_sp200 -P 1650 -d 2020-03-29  --close_loop
-python main.py --csv -p 2 -n aune_x8 -P 700 -d 2020-03-31  --close_loop
-python main.py --csv -p 2 -n 卡农转2.5转接头 -P 110 -d 2020-04-01  --close_loop
-python main.py --csv -p 2 -n 金画眉 -P 6600 -d 2020-04-15  --close_loop
-python main.py --csv -p 2 -n rnhp -P 2700 -d 2020-09-03 --close_loop
-python main.py --csv -p 2 -n 小乌 -P 2364 -d 2020-09-04 --close_loop
-python main.py --csv -p 2 -n 大乌耳罩 -P 500 -d 2020-09-04 --close_loop
-python main.py --csv -p 2 -n se846bt2 -P 3200 -d 2020-12-24 --close_loop
-python main.py --csv -p 2 -n sony_zx2 -P 1699 -d 2020-12-25 --close_loop
-python main.py --csv -p 3 -c 2 -n 充值 -P 499.9 -d 2020-05-26
-python main.py --csv -p 3 -c 2 -n 充值 -P 500 -d 2020-05-26
-python main.py --csv -p 3 -c 2 -n 充值 -P 12 -d 2020-06-25
-python main.py --csv -p 3 -c 2 -n 充值 -P 28 -d 2020-07-24
-python main.py --csv -p 3 -c 2 -n 充值 -P 28 -d 2020-08-28
-python main.py --csv --sort
-python main.py --csv -p 2 --sell -n hd660s -P 1600 -d 2020-04-08 --close_loop
-python main.py --csv -p 2 --sell -n zx100 -P 750 -d 2020-04-08
-python main.py --csv -p 2 --sell -n 黑黄鹂 -P 1799 -d 2020-04-10
-python main.py --csv -p 2 --sell -n 封闭乌 -P 3200 -d 2020-04-11 --close_loop
-python main.py --csv -p 2 --sell -n 达音科17th -P 2750 -d 2020-04-11 --close_loop
-python main.py --csv -p 2 -c 1 --sell -n ps碟 -P 324 -d 2020-04-12 -r 分手厨房2+植物大战僵尸3
-python main.py --csv -p 2 -c 1 --sell -n ps碟 -P 304 -d 2020-04-13 -r 底特律+真三国无双+荒野大镖客
-python main.py --csv -p 2 --sell -n aune_x8 -P 899 -d 2020-04-30 --close_loop
-python main.py --csv -p 2 --sell -n smsl_sp200 -P 1300 -d 2020-09-01 --close_loop
-python main.py --csv -p 2 --sell -n 小乌 -P 2299 -d 2020-09-17 --close_loop
-python main.py --csv -p 2 --sell -n u8 -P 4000 -d 2020-09-19
-python main.py --csv -p 2 --sell -n 金画眉 -P 6099 -d 2020-10-02 --close_loop
-python main.py --csv -p 2 --sell -n 3.5对录线 -P 58 -d 2020-10-28 --close_loop
-python main.py --csv -p 2 --sell -n 达音科dk4001 -P 2399 -d 2020-11-08 --close_loop
-python main.py --csv -p 2 --sell -n 铜彩光纤线 -P 60 -d 2020-11-15 --close_loop
+python main.py --csv --classification 1 -n ps碟 -P 128 -d 2020-12-26 -r 小小大星球+撕纸小邮差
+python main.py --csv --platform 2 -n smsl_sp200 -P 1650 -d 2020-03-29  --close_loop
+python main.py --csv --platform 2 -n aune_x8 -P 700 -d 2020-03-31  --close_loop
+python main.py --csv --platform 2 -n 卡农转2.5转接头 -P 110 -d 2020-04-01  --close_loop
+python main.py --csv --platform 2 -n 金画眉 -P 6600 -d 2020-04-15  --close_loop
+python main.py --csv --platform 2 -n rnhp -P 2700 -d 2020-09-03 --close_loop
+python main.py --csv --platform 2 -n 小乌 -P 2364 -d 2020-09-04 --close_loop
+python main.py --csv --platform 2 -n 大乌耳罩 -P 500 -d 2020-09-04 --close_loop
+python main.py --csv --platform 2 -n se846bt2 -P 3200 -d 2020-12-24 --close_loop
+python main.py --csv --platform 2 -n sony_zx2 -P 1699 -d 2020-12-25 --close_loop
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 499.9 -d 2020-05-26
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 500 -d 2020-05-26
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 12 -d 2020-06-25
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 28 -d 2020-07-24
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 28 -d 2020-08-28
+python main.py --csv --platform 2 --sell -n hd660s -P 1600 -d 2020-04-08 --close_loop
+python main.py --csv --platform 2 --sell -n zx100 -P 750 -d 2020-04-08
+python main.py --csv --platform 2 --sell -n 黑黄鹂 -P 1799 -d 2020-04-10
+python main.py --csv --platform 2 --sell -n 封闭乌 -P 3200 -d 2020-04-11 --close_loop
+python main.py --csv --platform 2 --sell -n 达音科17th -P 2750 -d 2020-04-11 --close_loop
+python main.py --csv --platform 2 --classification 1 --sell -n ps碟 -P 324 -d 2020-04-12 -r 分手厨房2+植物大战僵尸3
+python main.py --csv --platform 2 --classification 1 --sell -n ps碟 -P 304 -d 2020-04-13 -r 底特律+真三国无双+荒野大镖客
+python main.py --csv --platform 2 --sell -n aune_x8 -P 899 -d 2020-04-30 --close_loop
+python main.py --csv --platform 2 --sell -n smsl_sp200 -P 1300 -d 2020-09-01 --close_loop
+python main.py --csv --platform 2 --sell -n 小乌 -P 2299 -d 2020-09-17 --close_loop
+python main.py --csv --platform 2 --sell -n u8 -P 4000 -d 2020-09-19
+python main.py --csv --platform 2 --sell -n 金画眉 -P 6099 -d 2020-10-02 --close_loop
+python main.py --csv --platform 2 --sell -n 3.5对录线 -P 58 -d 2020-10-28 --close_loop
+python main.py --csv --platform 2 --sell -n 达音科dk4001 -P 2399 -d 2020-11-08 --close_loop
+python main.py --csv --platform 2 --sell -n 铜彩光纤线 -P 60 -d 2020-11-15 --close_loop
+python main.py --csv --platform 1 --classification 3 -n 戴尔显示器s3221qs -P 2898 -d 2020-11-01
+python main.py --csv --classification 3 -n 微星b450M_MAX_迫击炮+R5_3600 -P 1669 -d 2020-01-06
+python main.py --csv --classification 3 -n 科赋雷霆3200_8g*2 -P 490 -d 2020-01-06
+python main.py --csv --classification 3 -n 铭瑄1660super -P 1549 -d 2020-01-06
+python main.py --csv --classification 3 -n 东芝RD500_512MB -P 529 -d 2020-01-06
+python main.py --csv --classification 3 -n 西数蓝盘1TB -P 213.77 -d 2020-01-07
 python main.py --csv --sort

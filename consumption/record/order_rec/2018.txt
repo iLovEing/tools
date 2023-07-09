@@ -6,12 +6,12 @@ python main.py --csv -n 2.5转4.4转接头 -P 120 -d 2018-08-24 --close_loop
 python main.py --csv -n 3.5对录线 -P 98 -d 2018-09-09 --close_loop
 python main.py --csv -n 山灵收纳盒 -P 88 -d 2018-11-06
 python main.py --csv -n u8钢化膜 -P 20.5 -d 2018-11-08
-python main.py --csv -p 3 -n 达音科dk4001 -P 5500 -d 2018-11-11 --close_loop
-python main.py --csv -c 2 -n 拉比克饰品 -P 18.20 -d 2018-12-21
-python main.py --csv -c 2 -n 拉比克饰品 -P 2.98 -d 2018-12-22
-python main.py --csv -c 2 -n 黑鸟饰品 -P 60.7 -d 2018-08-18
-python main.py --csv -c 2 -n 水人饰品 -P 2.6 -d 2018-09-08
-python main.py --csv -c 2 -n pa饰品 -P 104 -d 2018-09-14
-python main.py --csv -c 2 -n tb饰品 -P 240 -d 2018-10-12
-python main.py --csv -p 3 -c 2 -n 充值 -P 240 -d 2018-12-21
+python main.py --csv --platform 4 -n 达音科dk4001 -P 5500 -d 2018-11-11 --close_loop -r 线下信用卡
+python main.py --csv --classification 2 -n 拉比克饰品 -P 18.20 -d 2018-12-21
+python main.py --csv --classification 2 -n 拉比克饰品 -P 2.98 -d 2018-12-22
+python main.py --csv --classification 2 -n 黑鸟饰品 -P 60.7 -d 2018-08-18
+python main.py --csv --classification 2 -n 水人饰品 -P 2.6 -d 2018-09-08
+python main.py --csv --classification 2 -n pa饰品 -P 104 -d 2018-09-14
+python main.py --csv --classification 2 -n tb饰品 -P 240 -d 2018-10-12
+python main.py --csv --platform 4 --classification 2 -n 充值 -P 240 -d 2018-12-21
 python main.py --csv --sort

@@ -13,20 +13,26 @@ class_dict = {
     '0': 'music',
     '1': 'PS',
     '2': 'dota2',
-    '3': 'others'
+    '3': 'PC',
+    '4': 'others'
 }
 pf_dict = {
     '0': 'TB',
     '1': 'JD',
     '2': 'XY',
-    '3': 'others',
+    '3': "PDD",
+    '4': 'others',
 }
 
 
+funds_one_year = 12000
+# 2020: 7000, 2025: 8000
+pc_founds = 7000
+
+
 def get_args():
-    help_str = '零花钱消费统计 [' \
-               'class_dict = {"0": "music", "1": "PS", "2": "dota2", "3": "others"}' \
-               ', pf_dict = {"0": "TB", "1": "JD", "2": "XY", "3": "others"}]'
+    help_str = 'class{0 - music, 1 - PS, 2 - dota2, 3 - PC, 4 - others}, ' \
+               'platform{0 - TB, 1 - JD, 2 - XY, 3 - PDD, 4 - others}]'
     parser = argparse.ArgumentParser(description=help_str)
     group = parser.add_mutually_exclusive_group()
     group.add_argument('--csv', action='store_true', help='操作csv, 添加消费项')
@@ -73,7 +79,7 @@ class CsvItem:
         print('total consumption:', self.df['price'].sum())
         print('\nneeded to be close_loop:')
         print(self.df[self.df['closed'] == 'N'])
-        print('total consumption:', self.df[self.df['closed'] == 'N']['price'].sum())
+        print('total consumption:', round(self.df[self.df['closed'] == 'N']['price'].sum(), 2))
 
     def add_item(self, args):
         item_dict = {
@@ -107,13 +113,31 @@ class CsvItem:
         print('add item:')
         print(self.df.iloc[len(self.df) - 1])
 
+    def add_pc_funds(self, year):
+        item_dict = {
+            'name': "PC 换代",
+            'class': [class_dict["3"]],
+            'platform': [pf_dict["4"]],
+            'B/S': ['S'],
+            'price': [pc_founds],
+            'trade_date': [str(year) + "-01-01"],
+            'remark': [np.nan],
+            'record_date': [time_now],
+            'year': [year]
+        }
+
+        self.df = pd.concat([self.df, pd.DataFrame(item_dict)], ignore_index=True)
+
+        print('\nadd item:')
+        print(self.df.iloc[len(self.df) - 1])
+
     def save(self):
         self.df.to_csv(csv_file, index=False, encoding='utf-8_sig')
 
     def special_operation(self):
         # 删除最后一行
-        # self.df = self.df.drop([len(self.df) - 1])
-        # print(len(self.df))
+        self.df = self.df.drop([len(self.df) - 1])
+        print(len(self.df))
         pass
 
     def get_csv(self):
@@ -147,12 +171,15 @@ class JsonItem:
                 total_outlay += self.summary_dict[str(y)]['class'][val]['profit']
             print(f"class [{val}] outlay: {round(total_outlay, 2)}")
 
-        income_this_year = self.summary_dict[str(this_year)]['income']
-        surplus_this_year = self.summary_dict[str(this_year)]['surplus']
+        surplus_history = self.summary_dict[str(this_year)]['surplus_history']
+        funds_this_year = self.summary_dict[str(this_year)]['funds']
         outlay_this_year = df[df['year'] == this_year]['price'].sum()
-        balance = income_this_year + surplus_this_year + outlay_this_year
-        print(f"\nIn year {this_year}, income {income_this_year}, history_surplus {surplus_this_year},"
-              f" outlay till now {round(outlay_this_year, 2)}, balance {round(balance, 2)}\nGood luck, and to be better.")
+        net_profit = funds_this_year + outlay_this_year
+        balance = net_profit + surplus_history
+        print(f"\nIn year {this_year}, funds {funds_this_year}, history_surplus {surplus_history}"
+              f"\noutlay till now {round(outlay_this_year, 2)}, net_profit {round(net_profit, 2)},"
+              f" balance {round(balance, 2)}"
+              f"\nGood luck, and to be better.")
 
     def add_year(self, df, year):
         self.__check_history(year)
@@ -178,6 +205,7 @@ class JsonItem:
                     class_dict['1']: 0,
                     class_dict['2']: 0,
                     class_dict['3']: 0,
+                    class_dict['4']: 0,
                 },
                 'balance': 0,
                 'till': 0,
@@ -218,10 +246,11 @@ class JsonItem:
             self.summary_dict['0']['class'][val] = round(self.summary_dict['0']['class'][val], 2)
 
         js_last_year['outlay'] = round(total_profit, 2)
+        js_last_year['net_profit'] = round(js_last_year['funds'] + js_last_year['outlay'], 2)
         js_last_year['ended'] = True
 
         self.summary_dict['0']['till'] = last_year
-        self.summary_dict['0']['balance'] = js_last_year['income'] + js_last_year['surplus'] + js_last_year['outlay']
+        self.summary_dict['0']['balance'] = js_last_year['funds'] + js_last_year['surplus_history'] + js_last_year['outlay']
         self.summary_dict['0']['balance'] = round(self.summary_dict['0']['balance'], 2)
 
         print(f"end year: {last_year}, total outlay: {js_last_year['outlay']}, balance: {self.summary_dict['0']['balance']}")
@@ -230,16 +259,17 @@ class JsonItem:
 
     def __add_new_year(self, new_year):
         if new_year == 2018:
-            income = 6000
-            surplus = 0
+            funds = funds_one_year / 2
+            surplus_history = 0
         else:
-            income = 12000
-            surplus = (self.summary_dict['0']['balance']) * 1.1
+            funds = funds_one_year
+            surplus_history = (self.summary_dict['0']['balance']) * 1.1
 
         self.summary_dict[str(new_year)] = {
-            'income': income,
-            'surplus': round(surplus, 2),
+            'surplus_history': round(surplus_history, 2),
+            'funds': funds,
             'outlay': 0,
+            'net_profit': 0,
             'ended': False,
             'class': {}
         }
@@ -251,7 +281,7 @@ class JsonItem:
                 'profit': 0,
             }
 
-        print(f"\nadd year to json file: {new_year}, income: {income}, surplus {round(surplus, 2)}")
+        print(f"\nadd year to json file: {new_year}, funds: {funds}, surplus_history {round(surplus_history, 2)}")
 
 
 if __name__ == '__main__':
@@ -281,6 +311,9 @@ if __name__ == '__main__':
             json_item.show_summary(csv_item.get_csv())
         elif args.add_year is not None:
             json_item.add_year(csv_item.get_csv(), args.add_year)
+            if args.add_year % 5 == 0:
+                csv_item.add_pc_funds(args.add_year)
+                csv_item.save()
         elif args.special:
             json_item.special_operation()
         elif args.sort:

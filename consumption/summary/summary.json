@@ -1,16 +1,22 @@
 {
     "0": {
-        "balance": -20679.61,
+        "balance": -23604.67,
         "class": {
+            "PC": -8601.77,
             "PS": -4093.53,
-            "dota2": -3509.88,
-            "music": -59096.59,
-            "others": -5408.0
+            "dota2": -3301.88,
+            "music": -58596.59,
+            "others": 90.0
         },
         "till": 2022
     },
     "2018": {
         "class": {
+            "PC": {
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
+            },
             "PS": {
                 "cost": 0.0,
                 "earn": 0.0,
@@ -33,12 +39,18 @@
             }
         },
         "ended": true,
-        "income": 6000,
+        "funds": 6000.0,
+        "net_profit": -3262.98,
         "outlay": -9262.98,
-        "surplus": 0
+        "surplus_history": 0
     },
     "2019": {
         "class": {
+            "PC": {
+                "cost": -998.0,
+                "earn": 0.0,
+                "profit": -998.0
+            },
             "PS": {
                 "cost": -2393.0,
                 "earn": 875.0,
@@ -61,12 +73,18 @@
             }
         },
         "ended": true,
-        "income": 12000,
-        "outlay": -11378.87,
-        "surplus": -3589.28
+        "funds": 12000,
+        "net_profit": -376.87,
+        "outlay": -12376.87,
+        "surplus_history": -3589.28
     },
     "2020": {
         "class": {
+            "PC": {
+                "cost": -7348.77,
+                "earn": 7000.0,
+                "profit": -348.77
+            },
             "PS": {
                 "cost": -610.2,
                 "earn": 628.0,
@@ -89,12 +107,18 @@
             }
         },
         "ended": true,
-        "income": 12000,
-        "outlay": -16031.19,
-        "surplus": -3264.96
+        "funds": 12000,
+        "net_profit": -4379.96,
+        "outlay": -16379.96,
+        "surplus_history": -4362.77
     },
     "2021": {
         "class": {
+            "PC": {
+                "cost": -1257.0,
+                "earn": 500.0,
+                "profit": -757.0
+            },
             "PS": {
                 "cost": -5899.32,
                 "earn": 2946.0,
@@ -107,31 +131,37 @@
             },
             "music": {
                 "cost": -54439.79,
-                "earn": 40140.0,
-                "profit": -14299.79
+                "earn": 40640.0,
+                "profit": -13799.79
             },
             "others": {
                 "cost": 0.0,
-                "earn": 1090.0,
-                "profit": 1090.0
+                "earn": 90.0,
+                "profit": 90.0
             }
         },
         "ended": true,
-        "income": 12000,
-        "outlay": -16163.11,
-        "surplus": -8025.76
+        "funds": 12000,
+        "net_profit": -5420.11,
+        "outlay": -17420.11,
+        "surplus_history": -9617.0
     },
     "2022": {
         "class": {
+            "PC": {
+                "cost": -6998.0,
+                "earn": 500.0,
+                "profit": -6498.0
+            },
             "PS": {
                 "cost": -465.01,
                 "earn": 825.0,
                 "profit": 359.99
             },
             "dota2": {
-                "cost": -416.0,
+                "cost": -208.0,
                 "earn": 0.0,
-                "profit": -416.0
+                "profit": -208.0
             },
             "music": {
                 "cost": -31692.84,
@@ -139,18 +169,24 @@
                 "profit": -12717.84
             },
             "others": {
-                "cost": -6998.0,
-                "earn": 500.0,
-                "profit": -6498.0
+                "cost": 0.0,
+                "earn": 0.0,
+                "profit": 0.0
             }
         },
         "ended": true,
-        "income": 12000,
-        "outlay": -19271.85,
-        "surplus": -13407.76
+        "funds": 12000,
+        "net_profit": -7063.85,
+        "outlay": -19063.85,
+        "surplus_history": -16540.82
     },
     "2023": {
         "class": {
+            "PC": {
+                "cost": 0,
+                "earn": 0,
+                "profit": 0
+            },
             "PS": {
                 "cost": 0,
                 "earn": 0,
@@ -173,8 +209,9 @@
             }
         },
         "ended": false,
-        "income": 12000,
+        "funds": 12000,
+        "net_profit": 0,
         "outlay": 0,
-        "surplus": -22747.57
+        "surplus_history": -25965.14
     }
 }
