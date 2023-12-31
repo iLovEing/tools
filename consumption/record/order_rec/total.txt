@@ -223,14 +223,12 @@ python main.py --csv --platform 3 --classification 3 -n 九州风神冰魔方 -P
 python main.py --csv --platform 2 --classification 3 --sell -n 先马金牌500W -P 120 -d 2023-02-09
 python main.py --csv --platform 2 --classification 3 --sell -n TP-LINK无线网卡TL-WDN8280 -P 170 -d 2023-02-19
 python main.py --csv --platform 2 --classification 3 --sell -n 西数蓝盘1TB -P 110 -d 2023-03-04
-python main.py --csv --platform 4 --classification 4 --sell -n OPPO五折券 -P 1000 -d 2023-01-16 -r 微信ToAnyou
+python main.py --csv --platform 4 --classification 4 --sell -n OPPO五折券 -P 1000 -d 2023-01-16 -r 微信ToMinAnyou
 python main.py --csv --platform 1 --classification 3 -n 联立216机箱 -P 596 -d 2023-01-28
 python main.py --csv --platform 1 --classification 3 -n 猫头鹰风扇 -P 170 -d 2023-01-29
 python main.py --csv --platform 2 --classification 3 --sell -n 西数蓝盘1TB -P 110 -d 2023-03-22
 python main.py --csv --platform 2 --sell -n dela_n1a  -P 6800 -d 2023-03-25 --close_loop
-python main.py --csv --sort
 python main.py --csv --platform 2 --classification 3 --sell -n AMD_R5_5600x -P 820 -d 2023-04-07
-
 python main.py --csv --platform 0 --classification 3 -n 索泰AMP4090 -P 12989 -d 2023-06-03
 python main.py --csv --platform 0 --classification 3 -n 铠侠RC20-2TB -P 577.69 -d 2023-05-30
 python main.py --csv --platform 1 --classification 3 -n 宏碁掠夺者-3600C16-16G*2 -P 778.35 -d 2023-06-13
@@ -243,6 +241,26 @@ python main.py --csv --platform 2 --classification 3 --sell -n 科赋DDR4-3200-8
 python main.py --csv --platform 2 --classification 3 --sell -n b550m迫击炮max-wifi -P 730 -d 2023-06-30
 python main.py --csv --platform 2 --classification 3 --sell -n 九州风神冰堡垒 -P 170 -d 2023-06-30
 python main.py --csv --platform 2 --classification 3 --sell -n 希捷移动硬盘-1TB -P 129 -d 2023-06-30
-python main.py --csv --sort
 python main.py --csv --platform 2 --classification 3 --sell -n AMD_R5_5600x -P 799 -d 2023-07-07
 python main.py --csv --platform 2 --classification 3 --sell -n 三星SSD_860EVO_250G -P 90 -d 2023-07-07
+python main.py --csv --platform 2 --classification 3 --sell -n rog-x570e-wifi-1代 -P 950 -d 2023-07-07
+python main.py --csv --platform 4 --classification 4 -n 地平线4 -P 116.55
+python main.py --csv --platform 2 --classification 3 --sell -n 科赋DDR4-3200-8GB*2 -P 179 -d 2023-08-15
+python main.py --csv --platform 0 --classification 3 -n 雷咖泽R98pro -P 424 -d 2023-08-11
+python main.py --csv --platform 1 --classification 3 -n 威联通464c -P 2259 -d 2023-09-04
+python main.py --csv --platform 3 --classification 3 -n 海康4TB_ST4000VX015 -P 429.8 -d 2023-09-07
+python main.py --csv --platform 3 --classification 3 -n 希捷8TB_ST8000NM017 -P 797.8 -d 2023-09-03
+python main.py --csv --platform 4 --classification 2 --sell -n 卖dota2饰品 -P 990 -d 2023-11-19 -r 支付宝495_银行卡495
+python main.py --csv --platform 2 --classification 3 --sell -n 东芝2TB移动硬盘 -P 269 -d 2023-09-25
+python main.py --csv --platform 2 --classification 3 --sell -n TPLink路由器WDR7650 -P 85 -d 2023-09-26
+python main.py --csv --platform 2 --classification 3 --sell -n 海康威视硬盘盒 -P 78 -d 2023-09-27
+python main.py --csv --platform 2 --classification 3 --sell -n 西数2TB移动硬盘 -P 249 -d 2023-11-19
+python main.py --csv --platform 4 --classification 1 -n ps碟 -P 585 -d 2023-09-23 -r 只狼+霍格沃兹
+python main.py --csv --platform 4 --classification 2 --sell -n 卖dota2饰品 -P 265.46 -d 2023-11-26 -r 支付宝193.72.21
+python main.py --csv --platform 1 --classification 4 --sell -n 回收手机 -P 730 -d 2023-12-10
+python main.py --csv --platform 0 --classification 1 -n ps手柄 -P 399 -d 2023-12-03
+python main.py --csv --platform 4 --classification 1 --sell -n ps碟 -P 505 -d 2023-12-29 -r 只狼+霍格沃兹
+python main.py --csv --sort
+
+2024
+python main.py --json -y 2024

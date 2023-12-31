@@ -27,7 +27,7 @@ pf_dict = {
 
 funds_one_year = 12000
 # 2020: 7000, 2025: 8000
-pc_founds = 7000
+pc_founds = 8000
 
 
 def get_args():
@@ -69,7 +69,7 @@ class CsvItem:
             self.df = pd.DataFrame(columns=['name', 'class', 'platform', 'B/S', 'price', 'closed',
                                             'profit', 'trade_date', 'record_date', 'remark', 'year'])
 
-    def sort_csv(self):
+    def sort(self):
         self.df = self.df.sort_values(by='trade_date')
         self.df.set_index(pd.Series(range(self.df.shape[0])))
         print("sort csv by date. done.")
@@ -136,8 +136,10 @@ class CsvItem:
 
     def special_operation(self):
         # 删除最后一行
+        print(f"csv len before delete: {len(self.df)}")
+        print(f"***** delete item *****\n{self.df.iloc[len(self.df) - 1]}\n**********")
         self.df = self.df.drop([len(self.df) - 1])
-        print(len(self.df))
+        print(f"csv len after delete: {len(self.df)}")
         pass
 
     def get_csv(self):
@@ -176,7 +178,7 @@ class JsonItem:
         outlay_this_year = df[df['year'] == this_year]['price'].sum()
         net_profit = funds_this_year + outlay_this_year
         balance = net_profit + surplus_history
-        print(f"\nIn year {this_year}, funds {funds_this_year}, history_surplus {surplus_history}"
+        print(f"\nAt year {this_year}, funds {funds_this_year}, history_surplus {surplus_history}"
               f"\noutlay till now {round(outlay_this_year, 2)}, net_profit {round(net_profit, 2)},"
               f" balance {round(balance, 2)}"
               f"\nGood luck, and to be better.")
@@ -193,7 +195,7 @@ class JsonItem:
     def special_operation(self):
         pass
 
-    def sort_json(self):
+    def sort(self):
         pass
 
     def __creat_json(self):
@@ -292,7 +294,7 @@ if __name__ == '__main__':
 
     if args.csv:
         if args.sort:
-            csv_item.sort_csv()
+            csv_item.sort()
         elif args.show:
             csv_item.show()
         elif args.special:
@@ -317,7 +319,7 @@ if __name__ == '__main__':
         elif args.special:
             json_item.special_operation()
         elif args.sort:
-            json_item.sort_json()
+            json_item.sort()
         else:
             print("unknown json args")
 

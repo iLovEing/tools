@@ -1,14 +1,14 @@
 {
     "0": {
-        "balance": -23604.67,
+        "balance": -32042.8,
         "class": {
-            "PC": -8601.77,
-            "PS": -4093.53,
-            "dota2": -3301.88,
-            "music": -58596.59,
-            "others": 90.0
+            "PC": -22210.34,
+            "PS": -4572.53,
+            "dota2": -2254.42,
+            "music": -50247.59,
+            "others": -13296.55
         },
-        "till": 2022
+        "till": 2023
     },
     "2018": {
         "class": {
@@ -183,6 +183,40 @@
     "2023": {
         "class": {
             "PC": {
+                "cost": -24201.57,
+                "earn": 10593.0,
+                "profit": -13608.57
+            },
+            "PS": {
+                "cost": -984.0,
+                "earn": 505.0,
+                "profit": -479.0
+            },
+            "dota2": {
+                "cost": -208.0,
+                "earn": 1255.46,
+                "profit": 1047.46
+            },
+            "music": {
+                "cost": 0.0,
+                "earn": 8349.0,
+                "profit": 8349.0
+            },
+            "others": {
+                "cost": -15116.55,
+                "earn": 1730.0,
+                "profit": -13386.55
+            }
+        },
+        "ended": true,
+        "funds": 12000,
+        "net_profit": -6077.66,
+        "outlay": -18077.66,
+        "surplus_history": -25965.14
+    },
+    "2024": {
+        "class": {
+            "PC": {
                 "cost": 0,
                 "earn": 0,
                 "profit": 0
@@ -212,6 +246,6 @@
         "funds": 12000,
         "net_profit": 0,
         "outlay": 0,
-        "surplus_history": -25965.14
+        "surplus_history": -35247.08
     }
 }
